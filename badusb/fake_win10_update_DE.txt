@@ -1,0 +1,25 @@
+REM run a fake Windows 10 update in kiosk mode (DE layout)
+DELAY 1000
+GUI r
+DELAY 500
+REM ##########
+REM The full command:
+REM msedge.exe --kiosk https://fakeupdate.net/win10ue/ --edge-kiosk-type=fullscreen
+REM ##########
+STRING msedge.exe 
+ALTSTRING --
+STRING kiosk https
+ALTSTRING ://
+STRING fakeupdate.net
+ALTSTRING /
+STRING win10ue
+ALTSTRING / --
+STRING edge
+ALTSTRING -
+STRING kiosk
+ALTSTRING -
+STRING tzpe
+ALTSTRING =
+STRING fullscreen
+DELAY 500
+ENTER
